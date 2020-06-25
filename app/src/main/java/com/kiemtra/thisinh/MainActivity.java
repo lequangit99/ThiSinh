@@ -38,6 +38,15 @@ public class MainActivity extends AppCompatActivity {
         dbContext = new DBContext(this);
         thiSinhList = dbContext.getAllThiSinh();
 
+        Collections.sort(thiSinhList, new Comparator<ThiSinh>() {
+            @Override
+            public int compare(ThiSinh thiSinh, ThiSinh thiSinh2) {
+                int i1 = thiSinh.getmHoTen().trim().lastIndexOf(" ")+1;
+                int i2 = thiSinh2.getmHoTen().trim().lastIndexOf(" ")+1;
+                return thiSinh.getmHoTen().substring(i1).compareTo(thiSinh2.getmHoTen().substring(i2));
+            }
+        });
+
         setAdapter();
 
         registerForContextMenu(listView);
