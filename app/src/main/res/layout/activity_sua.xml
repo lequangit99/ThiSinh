@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuaActivity">
+    <TextView
+        android:id="@+id/txt_sbd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Số báo danh"
+        android:textSize="20sp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/edt_sbd"
+        android:layout_below="@id/txt_sbd"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        >
+
+    </EditText>
+    <TextView
+        android:id="@+id/txt_hoTen"
+        android:layout_below="@+id/edt_sbd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Họ tên"
+        android:textSize="20sp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/edt_hoTen"
+        android:layout_below="@id/txt_hoTen"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        >
+
+    </EditText>
+    <TextView
+        android:id="@+id/txt_toan"
+        android:layout_below="@id/edt_hoTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Toán"
+        android:textSize="20sp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/edt_toan"
+        android:layout_below="@id/txt_toan"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="4"
+        android:textSize="20sp"
+        >
+
+    </EditText>
+    <TextView
+        android:id="@+id/txt_ly"
+        android:layout_below="@id/edt_toan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Lý"
+        android:textSize="20sp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/edt_ly"
+        android:layout_below="@id/txt_ly"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="4"
+        android:textSize="20sp"
+        >
+
+    </EditText>
+    <TextView
+        android:id="@+id/txt_hoa"
+        android:layout_below="@id/edt_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:maxLength="4"
+        android:text="Hoá"
+        android:textSize="20sp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/edt_hoa"
+        android:layout_below="@id/txt_hoa"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        >
+
+    </EditText>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edt_hoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/btn_dong_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đồng ý">
+
+        </Button>
+        <Button
+            android:id="@+id/btn_quay_ve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="Quay về">
+
+        </Button>
+    </LinearLayout>
+</RelativeLayout>
